@@ -1,4 +1,4 @@
-# rad-rosserial-arduino
+# rad-arduino-proxy
 Reinvented rosserial for minimalism and finer-grained control
 
 This started as a simple string-based method of communicating with a few arduinos.
