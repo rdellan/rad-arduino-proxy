@@ -28,3 +28,11 @@ Dependencies:
 https://pypi.org/project/cobs/
 
 https://github.com/bakercp/PacketSerial
+
+TODO:
+
+This needs to be turned into a python package that can be installed.
+
+Python packages shouldn't be installed using sudo. Fix that.
+
+The arduino example code should be turned into an arduino library that can be easily imported to simplify things.
