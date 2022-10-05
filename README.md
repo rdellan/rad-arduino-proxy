@@ -18,9 +18,13 @@ Useful features of this protocol:
 * Identifies Arduinos independent of their assigned USB port.
 
 References:
+
 https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing
 
 Dependencies:
+
 https://pypi.org/project/cobs/
+
 https://www.arduino.cc/reference/en/libraries/packetserial/
+
 https://github.com/bakercp/PacketSerial
