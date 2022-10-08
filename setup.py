@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import pathlib
 
 from setuptools import find_packages, setup
@@ -8,11 +6,9 @@ here = pathlib.Path(__file__).parent.resolve()
 
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
-version_file = (here / 'src/apify_client/_version.py').read_text(encoding='utf-8')
+version_file = (here / 'src/rad_arduino_proxy/_version.py').read_text(encoding='utf-8')
 version = None
 
-version_file = (here / 'src/apify_client/_version.py').read_text(encoding='utf-8')
-version = None
 for line in version_file.splitlines():
     if line.startswith('__version__'):
         delim = '"' if '"' in line else "'"
@@ -22,36 +18,27 @@ else:
     raise RuntimeError('Unable to find version string.')
 
 setup(
-    name='apify_client',
+    name='rad_arduino_proxy',
     version=version,
-
-    author='Apify Technologies s.r.o.',
-    author_email='support@apify.com',
-    url='https://github.com/apify/apify-client-python',
-    project_urls={
-        'Documentation': 'https://docs.apify.com/apify-client-python',
-        'Source': 'https://github.com/apify/apify-client-python',
-        'Issue tracker': 'https://github.com/apify/apify-client-python/issues',
-        'Apify Homepage': 'https://apify.com',
-    },
-    license='Apache Software License',
+    author='Ryan Dellana',
+    author_email='rdellan@sandia.gov',
+    url='https://github.com/rdellan/rad-arduino-proxy',
+    license='BSD',
     license_files=['LICENSE'],
-
-    description='Apify API client for Python',
+    description='Python Library for Lightweight Packet Serial Communication with Multiple Arduinos',
     long_description=long_description,
     long_description_content_type='text/markdown',
-
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Libraries',
+        'Intended Audience :: Education'
     ],
-    keywords='apify, api, client, scraping, automation',
-
+    keywords='arduino',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
+
+
     python_requires='>=3.7',
     install_requires=['requests ~= 2.28.0'],
     extras_require={
@@ -73,18 +60,3 @@ setup(
         ],
     },
 )
-
-
-
-
-
-
-
-
-setup(name='RadArduinoProxy',
-      version='0.8',
-      description='Arduino Proxy',
-      author='Ryan Dellana',
-      author_email='rdellan@sandia.gov',
-      url='',
-      packages=['']

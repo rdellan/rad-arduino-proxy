@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-
-"""
-Created: 10/31/2020
-Modified: 10/05/2022
-Author: Ryan A. Dellana (ryan.dellana@gmail.com)
-"""
-
 from typing import Union, List, Dict, Any, cast
 
 import math, time, copy, os, sys
