@@ -25,14 +25,33 @@ https://www.arduino.cc/reference/en/libraries/packetserial/
 
 Dependencies:
 
+## pyserial
+
+Best to install from source
+
+    wget https://github.com/pyserial/pyserial/archive/v3.4.tar.gz
+    tar -xvf v3.4.tar.gz
+    cd pyserial-3.4
+    python3 -m pip install .
+
+## cobs-python
+
 https://pypi.org/project/cobs/
 
+    git clone https://github.com/cmcqueen/cobs-python.git
+    cd cobs-python
+    python3 -m pip install .
+
+## arduino packet-serial library
+
 https://github.com/bakercp/PacketSerial
+
+Install PacketSerial via Arduino IDE library manager.
+
+
 
 TODO:
 
 This needs to be turned into a python package that can be installed.
-
-Python packages shouldn't be installed using sudo. Fix that.
 
 The arduino example code should be turned into an arduino library that can be easily imported to simplify things.

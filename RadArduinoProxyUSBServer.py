@@ -4,22 +4,6 @@
 Created: 10/31/2020
 Modified: 10/05/2022
 Author: Ryan A. Dellana (ryan.dellana@gmail.com)
-Description: Python 3 rewrite of ArduinoProxy.
-
-# Installing dependencies:
-
-# pyserial
-# Best to install from source
-wget https://github.com/pyserial/pyserial/archive/v3.4.tar.gz
-tar -xvf v3.4.tar.gz
-cd pyserial-3.4
-sudo python3 setup.py install
-
-# cobs-python
-git clone https://github.com/cmcqueen/cobs-python.git
-cd cobs-python
-sudo python3 setup.py install
-
 """
 
 from typing import Union, List, Dict, Any, cast
