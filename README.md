@@ -8,8 +8,9 @@ I'm maintaining it because the ROS 2 equivalent of rosserial is now
 too large to fit on smaller micro-controllers, and because I prefer a custom protocol that 
 minimizes control latency.
 
-Useful features of this protocol:
-* Compact library that easily fits on smaller micro-controllers.
+Features:
+* Can be easily used independent of Robot Operating System (ROS).
+* Easily fits on smaller micro-controllers.
 * Small protocol overhead (4-bytes).
 * Detects corrupt packets using one length byte and a 16-bit checksum.
 * Recovers/resyncs quickly after corrupt packets thanks to explicit EOF byte.
@@ -17,15 +18,9 @@ Useful features of this protocol:
 * Handles multiple Arduinos with one process.
 * Identifies Arduinos independent of their assigned USB port.
 
-References:
+## Dependencies:
 
-https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing
-
-https://www.arduino.cc/reference/en/libraries/packetserial/
-
-Dependencies:
-
-## pyserial
+### pyserial
 
 Best to install from source
 
@@ -34,7 +29,7 @@ Best to install from source
     cd pyserial-3.4
     python3 -m pip install .
 
-## cobs-python
+### cobs-python
 
 https://pypi.org/project/cobs/
 
@@ -42,16 +37,18 @@ https://pypi.org/project/cobs/
     cd cobs-python
     python3 -m pip install .
 
-## arduino packet-serial library
+### arduino packet-serial library
 
 https://github.com/bakercp/PacketSerial
+https://www.arduino.cc/reference/en/libraries/packetserial/
 
 Install PacketSerial via Arduino IDE library manager.
 
 
+### TODO:
 
-TODO:
+Rewrite this documentation to follow the correct format.
 
-This needs to be turned into a python package that can be installed.
+Rewrite documentation of the code to work with Sphinx.
 
 The arduino example code should be turned into an arduino library that can be easily imported to simplify things.
