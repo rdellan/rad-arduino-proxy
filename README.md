@@ -10,10 +10,10 @@ minimizes control latency.
 
 Features:
 * Can be easily used independent of Robot Operating System (ROS).
-* Easily fits on smaller micro-controllers.
+* Fits on smaller micro-controllers.
 * Small protocol overhead (4-bytes).
 * Detects corrupt packets using one length byte and a 16-bit checksum.
-* Recovers/resyncs quickly after corrupt packets thanks to explicit EOF byte.
+* Recovers/resyncs quickly after corrupt packets using explicit EOF byte.
 * Uses Consistent Overhead Byte Stuffing (COBS) encoding to avoid overloading of EOF byte.
 * Handles multiple Arduinos with one process.
 * Identifies Arduinos independent of their assigned USB port.
@@ -40,6 +40,7 @@ https://pypi.org/project/cobs/
 ### arduino packet-serial library
 
 https://github.com/bakercp/PacketSerial
+
 https://www.arduino.cc/reference/en/libraries/packetserial/
 
 Install PacketSerial via Arduino IDE library manager.
