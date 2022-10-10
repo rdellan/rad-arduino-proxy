@@ -38,5 +38,5 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     python_requires='>=3.6',
-    install_requires=['pyserial >= 3.4.0', 'cobs >= 1.2.0']
+    install_requires=['pyserial >= 3.4.0', 'cobs >= 1.2.0', 'numpy >= 1.19.4']
 )
